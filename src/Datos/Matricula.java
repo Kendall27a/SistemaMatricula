@@ -9,5 +9,31 @@ package Datos;
  * @author kenda
  */
 public class Matricula {
+    private Estudiante estudiantes;
+    private Profesor profesor;
+    private String curso;
+
+    public Matricula(Estudiante estudiantes, Profesor profesor, String curso) {
+        this.estudiantes = estudiantes;
+        this.profesor = profesor;
+        this.curso = curso;
+    }
+
+    public Estudiante getEstudiantes() {
+        return estudiantes;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+    
+    @Override
+    public String toString() {
+        return "Matricula:\n" + estudiantes + "\n" + profesor +  "\nCurso: " + curso;
+    }
     
 }
